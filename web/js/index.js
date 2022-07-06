@@ -317,6 +317,5 @@ fetch(`/api/elements${window.location.search}`, {
   .catch((err) => {
     displayError(
       `Error while requesting document elements for drop down: ${err}`
-    );
-    console.log("window.location.search", window.location.search);
+    )
   });
