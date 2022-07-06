@@ -249,7 +249,7 @@ const { loadGltf } = initThreeJsElements();
 $elemSelector.addEventListener("change", async (evt) => {
   // Trigger translation by getting /api/gltf
   const selectedOption = evt.target.options[event.target.selectedIndex];
-  if (selectedOption.innerText !== "-- Select an Item index.js --") {
+  if (selectedOption.innerText !== "-- Select an Item --") {
     try {
       document.body.style.cursor = "progress";
       const resp = await fetch(
